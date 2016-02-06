@@ -33,17 +33,15 @@ total(books)
 #(7:12 per mile) and 1 mile at easy pace again, what time do I get home for breakfast?
 
 
+start_hour = 6
+start_minute = 52
 
 def run():
 	start = (6*60+52)*60
-	start_hour = 6
-	start_minute = 52
 	easy = (8*60+15)*2
 	fast = (7*60+12)*3
-	easy_mile = (8*60+15.0)/60
-	easy_mph = 60.0/(easy_mile)
-	fast_mile = (7*60+12.0)/60.0
-	fast_mph = 60.00/(fast_mile)
+	easy_mph = 60.0/((8*60+15.0)/60)
+	fast_mph= 60.0/((7*60+12.0)/60.0)
 	runtime = (easy + fast)/60
 	finish_hour = (start + easy + fast)/(60*60.0)
 	finish_floored = (start + easy + fast)//(60*60) 
