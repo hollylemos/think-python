@@ -49,8 +49,8 @@ def run():
 	print 'Problem 3:'
 	print 'I started my run at %d:%d' % (start_hour, start_minute), 'am'
 	print 'I ran for', runtime, 'minutes'
-	print 'I ran 2 miles at an easy pace of', easy_mph, 'mph'
-	print 'I ran 3 miles at a tempo pace of', fast_mph, 'mph'
+	print 'I ran 2 miles at an easy pace of', round(easy_mph, 2),'mph'
+	print 'I ran 3 miles at a tempo pace of', round(fast_mph, 2),'mph'
 	print 'Back for breakfast at %d:%d' % (finish_hour,finish_minute)
 
 
